@@ -1,0 +1,8 @@
+com\haruncinar\readingisgood\service\OrderService.class
+com\haruncinar\readingisgood\entity\Book.class
+com\haruncinar\readingisgood\entity\MainEntity.class
+com\haruncinar\readingisgood\controller\CustomerController.class
+com\haruncinar\readingisgood\service\CustomerService.class
+com\haruncinar\readingisgood\entity\Address.class
+com\haruncinar\readingisgood\entity\Customer.class
+com\haruncinar\readingisgood\repository\AddressRepository.class
