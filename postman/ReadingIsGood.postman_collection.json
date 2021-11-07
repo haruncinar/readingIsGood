@@ -1,0 +1,220 @@
+{
+	"info": {
+		"_postman_id": "10c15cc1-6518-4e54-96c0-4f922df90ccb",
+		"name": "ReadingIsGood",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/api/customer/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Zafer Çınar\",\r\n    \"phoneNumber\" : \"123456784\",\r\n    \"email\" : \"asldkfadsafszdf\",\r\n    \"citizenNumber\" : \"1232453465\",\r\n    \"address\" : \r\n    {\r\n        \"buildingNumber\":\"1\",\r\n        \"streetName\":\"Cumhuriyet Sokak\",\r\n        \"neighborhoodName\":\"Yeni Mahalle\",\r\n        \"district\":\"Esenler\",\r\n        \"city\":\"İstanbul\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/customer/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"customer",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/customer//getAllCustomerOrdersByIdWithPagination/618792d0f5bfdc17d66e00a8?pageNo=1&pageSize=2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/customer/getAllCustomerOrdersByIdWithPagination/618792d0f5bfdc17d66e00a8?pageNo=1&pageSize=2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"customer",
+						"getAllCustomerOrdersByIdWithPagination",
+						"618792d0f5bfdc17d66e00a8"
+					],
+					"query": [
+						{
+							"key": "pageNo",
+							"value": "1"
+						},
+						{
+							"key": "pageSize",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/book/create/",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Jose Saramago\",\r\n    \"authorName\" : \"Körlük\",\r\n    \"isbn\" : \"1234532123234362\",\r\n    \"price\" : 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/book/create/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"book",
+						"create",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/book/updateBookStock",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"bookId\":\"618859e96c68fb264e5431eb\",\r\n    \"amount\":23\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/book/updateBookStock",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"book",
+						"updateBookStock"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/order/create/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderLines\":\r\n    [\r\n        {\r\n        \"book\":\r\n            {\r\n                \"id\":\"61879d137a1735433e6d6ea3\"\r\n            },\r\n            \"amount\" : 2\r\n        },\r\n        {\r\n            \"book\":\r\n            {\r\n                \"id\":\"6187adaf0de4e4615d88fb04\"\r\n            },\r\n            \"amount\" : 2\r\n        }\r\n    ],\r\n    \"customer\":\r\n    {\r\n        \"id\":\"6187a7fbeec6632242cc339b\"\r\n    }\r\n    \r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/order/create/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"order",
+						"create",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/order/getOrdersByDateInterval?startDate=2021-11-06&endDate=2021-11-08",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/order/getOrdersByDateInterval?startDate=2021-11-06&endDate=2021-11-08",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"order",
+						"getOrdersByDateInterval"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2021-11-06"
+						},
+						{
+							"key": "endDate",
+							"value": "2021-11-08"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/order/getOrderById/6187e11415567970e05d288d",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/order/getOrderById/6187e11415567970e05d288d",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"order",
+						"getOrderById",
+						"6187e11415567970e05d288d"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
