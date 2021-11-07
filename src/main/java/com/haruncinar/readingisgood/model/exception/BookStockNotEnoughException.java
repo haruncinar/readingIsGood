@@ -6,7 +6,7 @@ import lombok.Getter;
 @Getter
 public class BookStockNotEnoughException extends BaseReadingIsGoodException
 {
-    private final String code =  ReadingIsGoodConstants.BOOK_STOCK_NOT_ENOUGH_CODE;;
+    private final String code =  ReadingIsGoodConstants.BOOK_STOCK_NOT_ENOUGH_CODE;
 
     public BookStockNotEnoughException()
     {

@@ -12,4 +12,5 @@ public class BookNotFoundException extends BaseReadingIsGoodException
     {
         super(ReadingIsGoodConstants.BOOK_NOT_FOUND_MESSAGE);
     }
+
 }

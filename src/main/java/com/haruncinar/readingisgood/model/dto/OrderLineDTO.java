@@ -7,7 +7,7 @@ import java.io.Serializable;
 @Data
 public class OrderLineDTO implements Serializable
 {
-    private String bookName;
+    private String bookId;
 
     private Integer amount;
 }

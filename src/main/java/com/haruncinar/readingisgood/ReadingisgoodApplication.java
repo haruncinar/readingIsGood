@@ -9,14 +9,8 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 public class ReadingisgoodApplication {
 
 	public static void main(String[] args) {
-		try
-		{
-			SpringApplication.run(ReadingisgoodApplication.class, args);
-		}
-		catch (Exception exception)
-		{
-			System.out.println("SpringBootApplication deploy olurken hata alındı. Hata detayı: "+ exception.getMessage());
-		}
+
+		SpringApplication.run(ReadingisgoodApplication.class, args);
 	}
 
 }

@@ -1,12 +1,16 @@
 package com.haruncinar.readingisgood.entity;
 
+import lombok.Builder;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
 import javax.validation.constraints.NotNull;
 
+@EqualsAndHashCode(callSuper = true)
 @Data
+@Builder
 @Document(collection = "address")
 public class Address extends MainEntity
 {

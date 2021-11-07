@@ -1,7 +1,6 @@
 package com.haruncinar.readingisgood.controller;
 
 import com.haruncinar.readingisgood.entity.Customer;
-import com.haruncinar.readingisgood.entity.Order;
 import com.haruncinar.readingisgood.model.CreateCustomerResponse;
 import com.haruncinar.readingisgood.model.GetAllCustomerOrdersByIdWithPaginationResponse;
 import com.haruncinar.readingisgood.service.CustomerService;
@@ -15,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
 
 @RestController
 @RequestMapping("/api/customer")

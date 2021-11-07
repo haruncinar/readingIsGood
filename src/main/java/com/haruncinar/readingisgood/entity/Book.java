@@ -1,5 +1,6 @@
 package com.haruncinar.readingisgood.entity;
 
+import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.springframework.data.mongodb.core.index.Indexed;
@@ -11,6 +12,7 @@ import java.math.BigDecimal;
 
 @EqualsAndHashCode(callSuper = true)
 @Data
+@Builder
 @Document(collection = "book")
 public class Book extends MainEntity
 {

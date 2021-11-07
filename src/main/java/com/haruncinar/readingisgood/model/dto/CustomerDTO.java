@@ -10,7 +10,7 @@ public class CustomerDTO implements Serializable
 {
     String name;
 
-    BigInteger phoneNumber;
+    String phoneNumber;
 
     String email;
 }

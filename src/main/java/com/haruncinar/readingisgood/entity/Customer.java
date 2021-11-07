@@ -1,5 +1,6 @@
 package com.haruncinar.readingisgood.entity;
 
+import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.springframework.data.mongodb.core.index.Indexed;
@@ -13,6 +14,7 @@ import java.util.List;
 
 @EqualsAndHashCode(callSuper = true)
 @Data
+@Builder
 @Document(collection = "customer")
 public class Customer extends MainEntity
 {
@@ -24,7 +26,7 @@ public class Customer extends MainEntity
 
     @NotNull(message = "phoneNumber can not be null")
     @Indexed(unique = true)
-    private BigInteger phoneNumber;
+    private String phoneNumber;
 
     @NotNull(message = "email can not be null")
     @Indexed(unique = true)

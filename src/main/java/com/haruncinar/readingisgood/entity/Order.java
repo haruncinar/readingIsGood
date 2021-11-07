@@ -12,13 +12,14 @@ import java.util.List;
 
 @EqualsAndHashCode(callSuper = true)
 @Data
+@Builder
 @Document(collection = "order")
 public class Order extends MainEntity
 {
     @DBRef
     private List<OrderLine> orderLines;
 
-    @DBRef
+    @DBRef(lazy = true)
     private Customer customer;
 
     @Field(name = "orderStatus")
